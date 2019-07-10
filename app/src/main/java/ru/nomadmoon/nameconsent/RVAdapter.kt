@@ -5,9 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 
-class RVAdapter(val myDataset: Array<String>) : RecyclerView.Adapter<RVAdapter.ViewHolder>() {
+class RVAdapter(val myDataset: ArrayList<NameData>) : RecyclerView.Adapter<RVAdapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.mView.text=myDataset[position]
+        holder.mView.text=myDataset[position].Name
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
