@@ -8,6 +8,9 @@ object MainObject
     var filteredNames: ArrayList<String> = ArrayList()
     var countThreshold: Int = 1000
     var gender: String = "М"
+    var girlPosition = 0
+    var boyPosition = 0
+
 
 }
 
